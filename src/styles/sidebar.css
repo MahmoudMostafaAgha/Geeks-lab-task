@@ -1,0 +1,193 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 45px; 
+    height: 100vh; 
+    background-color: #181818; 
+    transition: width 0.5s cubic-bezier(0.2, 0.2, 0.2, 0.2); 
+    overflow-x: hidden; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-shadow: 10px 4px 21.100000381469727px 0px #00000061;
+    z-index: 99;
+}
+
+.burger-icon{
+    display: none;
+}
+
+.sidebar:hover {
+    width: 180px; 
+    overflow-x: visible; 
+    animation: shake 0.5s alternate; 
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(5px); }
+    100% { transform: translateX(0); }
+}
+
+.sidebar-logo {
+    width: 100%; 
+    height: auto;
+    padding: 10%;
+    box-sizing: border-box; 
+}
+
+.sidebar-icon{
+    padding: 10px; 
+    box-sizing: border-box; 
+}
+
+.sidebar-list {
+    list-style: none; 
+    padding: 0; 
+}
+
+.sidebar ul li {
+    margin-bottom: 10px; 
+}
+
+.sidebar-link {
+    color: #fff !important; 
+    text-decoration: none; 
+    display: flex; 
+    font-size: 19px;
+    align-items: center; 
+    box-sizing: border-box; 
+    
+}
+
+.sidebar-text ,.sidebar-muted-text{
+    display: none;
+}
+
+.sidebar:hover .sidebar-text , .sidebar:hover .sidebar-muted-text{
+    display: block;
+}
+
+.sidebar-link:hover .sidebar-icon,
+.sidebar-link:hover .sidebar-text {
+    color: #53ACFF; 
+    cursor: pointer;
+}
+
+
+.sidebar-muted-link {
+    color: #FFFFFF4D;
+    text-decoration: none; 
+    display: flex; 
+    font-size: 19px;
+    align-items: center; 
+    box-sizing: border-box; 
+    position: relative;
+    transition: all 0.5s ease-in-out; 
+}
+
+.sidebar-muted-link:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); 
+    background-color: #53ACFF;
+    backdrop-filter: blur(10px); 
+}
+
+.sidebar-muted-link:hover::after {
+    content: "Coming Soon";
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.5) inset; 
+    background-color: rgba(83, 172, 255, 0.3); 
+    backdrop-filter: blur(20px); 
+    color: white;
+    font-size: 14px; 
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+
+
+.sidebar-bottom {
+    margin-top: auto; 
+    padding: 10px; 
+    color: white; 
+    align-self: center;
+}
+
+
+.user-data{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    gap: 15px;
+}
+.user-text{
+    display: none;
+
+}
+
+.sidebar:hover .user-text{
+display: block;
+}
+.user-name{
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+.user-level{
+    color: #979797;
+    font-size: 13px;
+}
+
+.brand-data{
+    display: none;
+    color: #424242;
+    font-size: 14px;
+}
+.sidebar:hover .brand-data{
+    display: block;
+    }
+@media screen and (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+
+    .burger-icon {
+        display: block;
+    }
+
+    .user-data,
+    .sidebar-logo {
+        display: none;
+    }
+    .sidebar.active {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100vh;
+        background-color: #181818;
+        transition: transform 0.3s ease-in-out;
+        z-index: 999;
+    }
+    .burger-icon{
+        display: block;
+        position: fixed;
+        top: 1em;
+        left: 1em;
+        color: white;
+    }
+
+    .sidebar-text ,.sidebar-muted-text , .user-text , .brand-data{
+        display: block;
+    }
+    
+}

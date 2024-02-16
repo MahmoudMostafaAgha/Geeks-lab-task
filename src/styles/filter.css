@@ -1,0 +1,209 @@
+.filter-container{
+    margin: 26px 0;
+    background-color: #181818;
+    border-radius: 6.86px;
+    font-family: 'Poppins semiBold';
+    padding: 17px 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-title{
+    color: white;
+    text-align: center;
+    font-size: 24px;
+}
+
+.filter-input-container{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.filter-input-label{
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-label{
+    color: #979797;
+    font-size: 14px;
+}
+
+.clear-all{
+    color: white;
+    font-size: 14px;
+}
+
+.select-box{
+    background-color: #202020;
+    border-radius: 6.86px;
+    width: 100%;
+    height: 51px;
+    padding: 8px 7px;
+}
+
+.selected-option{
+    color: #202020;
+    background-color: #53ACFF;
+    width: fit-content;
+    border-radius: 4.42px;
+    font-family: 'Poppins regular';
+    font-size: 11px;
+    padding: 1px 5px;
+}
+
+.filter-lists-container{
+    margin: 14px 0;
+    background-color: #202020;;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 22px;
+}
+
+
+.stock{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-bottom: 14px;
+    
+}
+.ticket-search-container{
+    width: 100%;
+    border-radius: 5px;
+    align-self: center;
+    margin-top: 0;
+    color: white;
+}
+
+.ticket-search{
+    border-radius: 5px;
+}
+
+.industry-title{
+    color: white;
+    font-size: 15px;
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 7px;
+}
+
+.options-container{
+    width: 100%;
+    justify-content: space-between;
+    margin: 1em 0;
+}
+
+
+.items-col{
+    position: relative;
+    padding: 0;
+}
+
+.items-col::before{
+    content: ''; 
+    position: absolute;
+    top: 0px;
+    width: 1px;
+    left: -3px;
+    height: 100%;
+    background-color: #ffffff; 
+
+}
+.category-item{
+    display: flex;
+    color: white;
+    align-items: center;
+    font-family: 'Poppins regular';
+    font-size: 11px;
+    margin-bottom: 4px;
+    transition: all 0.7 ease-in-out;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.category-item:hover{
+    color: #202020;
+    background-color: #53ACFF;
+    width: fit-content;
+}
+
+.radio-btn-label{
+    color: white;
+    font-family: 'Poppins regular';
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #494949;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #494949;
+    margin-right: 11px;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #53ACFF;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    margin-right: 11px;
+    border: 2px solid #494949;
+}
+
+.row{
+    margin-bottom: 24px;
+}
+.filter-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.gradient-text {
+    background: linear-gradient(360deg, #FFFFFF -72%, #202020 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 13px;
+    font-family: 'Poppins regular';
+}
+
+.blue-bg-text{
+    background-color: #53ACFF;
+    width: fit-content;
+    font-family: 'Poppins regular';
+    border-radius: 6px;
+    color: white;
+    font-size: 10px;
+    padding: 4px;
+    text-align: center;
+}
+
+.apply-btn{
+    background-color: #53ACFF;
+    border-radius: 6px;
+    color: white;
+    padding: 7px 50px;
+    width: fit-content;
+    align-self: center;
+    text-align: center;
+}
