@@ -14,7 +14,7 @@ const SideBar = () => {
         <>
        
         <div className={`sidebar ${sidebarVisible ? 'active' : ''}`}>
-            <img src='../public/images/sidebar-logo.png' alt="Sidebar Logo" className='sidebar-logo' />
+            <img src='/images/sidebar-logo.png' alt="Sidebar Logo" className='sidebar-logo' />
             <ul className='sidebar-list'>
                 <li>
                     <a className='sidebar-link'>
@@ -49,7 +49,7 @@ const SideBar = () => {
             </ul>
             <div className="sidebar-bottom">
                 <div className="user-data">
-                    <img src="../public/images/user.png" alt="Portfolio" className='user-img'/>
+                    <img src="/images/user.png" alt="Portfolio" className='user-img'/>
                     <div className="user-text">
                         <h3 className='user-name'>Moni Roy</h3>
                         <div className="user-level">Beginner</div>

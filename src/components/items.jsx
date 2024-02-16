@@ -34,19 +34,19 @@ const Items = () => {
               onClick={() => toggleItemExpansion(index)}
             >
               <div className="data-container">
-                <img src="./public/images/dollar-tag.png" alt="dollar" />
+                <img src="/images/dollar-tag.png" alt="dollar" />
                 <div>{items[index % items.length].name}</div>
               </div>
               <div className="spiliter"></div>
 
               <div className="data-container">
-                <img src="./public/images/revenue.png" alt="dollar" />
+                <img src="/images/revenue.png" alt="dollar" />
                 <div>{items[index % items.length].revenue}</div>
               </div>
               <div className="spiliter"></div>
 
               <div className="data-container">
-                <img src="./public/images/indicator.png" alt="dollar" />
+                <img src="/images/indicator.png" alt="dollar" />
                 <div className={items[index % items.length].class}>
                   {items[index % items.length].risk === 'Low' ? '-0.25 %' : '0.5 %'}
                 </div>
